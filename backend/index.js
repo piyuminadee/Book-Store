@@ -105,6 +105,12 @@ app.put("/books/:id", async (request, response) => {
         }
     const {id} = request.params;
 
+    const result = await Book.findByIdAndUpdate(id, request.body);
+
+    if(!result) {
+        return response.status(404).json({message : "Not found"})
+    }
+    return response.status(200).send({message : "successfully updated"})
     } catch (error) {
         console.log(error.message);
         response.status(500).send({message : error.message})
