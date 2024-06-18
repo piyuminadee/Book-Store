@@ -9,7 +9,7 @@ import ShowBook from './pages/ShowBook';
 
 
 
-export const App = () => {
+const App = () => {
   return (
     <Routes>
       <Route path='/' element={<Home/>}/>
@@ -20,3 +20,4 @@ export const App = () => {
     </Routes>
   )
 }
+export default App
