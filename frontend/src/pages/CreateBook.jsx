@@ -21,7 +21,7 @@ function CreateBook() {
       .post("http://localhost:3000/books", data)
       .then(() => {
         setLoading(false);
-        enqueueSnackbar("Book Created successfully", { variant: "success" });
+        enqueueSnackbar("Book Edited successfully", { variant: "success" });
         navigate("/");
       })
       .catch((error) => {
