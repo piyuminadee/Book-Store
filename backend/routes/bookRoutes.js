@@ -21,6 +21,7 @@ router.post('/', async (request, response) => {
             title: request.body.title,
             author: request.body.author,
             publishYear: request.body.publishYear,
+            imagePath:request.body.imagePath,
         };
 
         const book = await Book.create(newBook);

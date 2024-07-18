@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
 import { useParams } from 'react-router-dom';
-import BackButton from '../component/BackButton.jsx';
-import Spinner from '../component/Spinner.jsx';
+import BackButton from '../component/BackButton';
+import Spinner from '../component/Spinner';
 
 const ShowBook = () => {
   const [book, setBook] = useState({});
